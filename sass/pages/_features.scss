@@ -1,0 +1,103 @@
+/*=============== FEATURES ===============*/
+.features {
+    overflow: hidden;
+    position: relative;
+
+    &__container {
+        padding-top: 2rem;
+        grid-template-columns: 285px;
+        justify-content: center;
+
+        @media screen and (min-width: 1040px) {
+            padding: 2rem 0 3rem;
+        }
+    }
+
+    &__group {
+        display: grid;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__img {
+        width: 150px;
+        justify-self: center;
+
+        @media screen and (min-width: 1040px) {
+            width: 200px;
+        }
+    }
+
+    &__card {
+        width: 112px;
+        background-color: hsla(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(16px);
+        border-radius: 1.25rem;
+        padding: 0.75rem 2rem;
+        text-align: center;
+        color: var(--title-color);
+        position: absolute;
+
+        @media screen and (min-width: 1040px) {
+            width: 127px;
+            padding: .75rem 2.5rem;
+        }   
+
+        &-1 {
+            top: 4rem;
+            left: 1.5rem;
+
+            @media screen and (min-width: 1040px) {
+                left: -1rem;
+            }
+        }
+
+        &-2 {
+            top: 8rem;
+            right: 1rem;
+
+            @media screen and (min-width: 1040px) {
+                right: -2.5rem;
+            }
+        }
+
+        &-3 {
+            left: 1.5rem;
+            bottom: 2rem;
+
+            @media screen and (min-width: 1040px) {
+                bottom: 7rem;
+                left: -1rem;
+            }
+        }
+
+        &-title {
+            font-size: var(--h3-font-size);
+            margin-bottom: 0.25rem;
+        }
+
+        &-description {
+            font-size: var(--smaller-font-size);
+        }
+    }
+
+    &__map {
+        max-width: initial;
+        width: 450px;
+        position: absolute;
+        top: 8rem;
+        left: -3rem;
+        margin: auto;
+        transform: rotate(-22deg);
+
+        @media screen and (min-width: 576px) {
+            left: 0;
+            right: 0;   
+        }
+
+        @media screen and (min-width: 1040px) {
+            width: 650px;
+            top: 11rem;
+        }
+    }
+}
